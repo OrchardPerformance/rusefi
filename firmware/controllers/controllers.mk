@@ -58,6 +58,7 @@ CONTROLLERS_SRC_CPP = \
 	$(CONTROLLERS_DIR)/start_stop.cpp \
 	$(CONTROLLERS_DIR)/simple_tcu.cpp \
 	$(CONTROLLERS_DIR)/limp_manager.cpp \
+	$(CONTROLLERS_DIR)/can/can_EGTtoCAN.cpp \
 
 CONTROLLERS_INC=\
 	$(CONTROLLERS_DIR) \

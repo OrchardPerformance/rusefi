@@ -21,8 +21,8 @@
 
 
 EGTtoCAN::EGTtoCAN(uint8_t EGTIndex)
-	: CanListener(0x610 + EGTIndex),
-		m_egtIndex(EGTIndex)
+	: CanListener(0x610 + EGTIndex)
+	,	m_egtIndex(EGTIndex)
 {
 }
 
@@ -30,7 +30,7 @@ void EGTtoCAN::decodeFrame(const CANRxFrame& frame, efitick_t nowNt) {
 	if (frame.DLC != 8) {
 		return;
 	}
-	& egts = tsOutputChannels.egtValues.values;
+	auto & egts = tsOutputChannels.egtValues.values;
 
 	if (m_egtIndex == 0) {
 		egts [0] = SWAP_UINT16(frame.data16[0]);

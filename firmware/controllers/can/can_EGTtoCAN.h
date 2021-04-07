@@ -8,5 +8,7 @@ public:
 	EGTtoCAN(uint8_t EGTIndex);
 
 protected:
-	void processFrame(const CANRxFrame& frame, efitick_t nowNt) override;
+	void decodeFrame(const CANRxFrame& frame, efitick_t nowNt) override;
+
+private: uint8_t m_egtIndex;
 };

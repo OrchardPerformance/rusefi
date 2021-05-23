@@ -21,7 +21,7 @@
 
 
 EGTtoCAN::EGTtoCAN(uint8_t EGTIndex)
-	: CanListener(0x610 + EGTIndex)
+	: CanListener(0x610) // + EGTIndex)
 	,	m_egtIndex(EGTIndex)
 {
 }

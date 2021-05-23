@@ -11,7 +11,14 @@
 		"system_error": "cpp",
 		"vector": "cpp",
 		"xhash": "cpp",
-		"xtree": "cpp"
+		"xtree": "cpp",
+		"array": "cpp",
+		"functional": "cpp",
+		"istream": "cpp",
+		"ostream": "cpp",
+		"tuple": "cpp",
+		"type_traits": "cpp",
+		"utility": "cpp"
 	},
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
@@ -28,4 +35,5 @@
 		"hardware/": true,
 		"firmware/ChibiOS/demos": true,
 	},
+	"C_Cpp.dimInactiveRegions": false,
 }
